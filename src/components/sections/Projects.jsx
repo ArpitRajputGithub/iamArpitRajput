@@ -134,6 +134,21 @@ export default function Projects() {
                     gap: 0.5rem;
                     margin-top: auto;
                 }
+
+                @media (max-width: 480px) {
+                    .project-card {
+                        padding: 1rem;
+                    }
+                    .project-title {
+                        font-size: 1.125rem;
+                    }
+                    .project-description {
+                        font-size: 0.875rem;
+                    }
+                    .project-tech {
+                        gap: 0.375rem;
+                    }
+                }
             `}</style>
         </section>
     );

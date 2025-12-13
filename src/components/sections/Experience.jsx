@@ -133,6 +133,30 @@ export default function Experience() {
           left: 0;
           color: var(--accent);
         }
+
+        @media (max-width: 480px) {
+          .experience-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.25rem;
+          }
+          .experience-title {
+            font-size: 1.05rem;
+          }
+          .experience-duration {
+            font-size: 0.8125rem;
+          }
+          .experience-company {
+            font-size: 0.875rem;
+          }
+          .experience-description {
+            font-size: 0.875rem;
+          }
+          .experience-highlights li {
+            font-size: 0.8125rem;
+            padding-left: 1rem;
+          }
+        }
       `}</style>
         </section>
     );

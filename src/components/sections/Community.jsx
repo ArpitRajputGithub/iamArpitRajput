@@ -261,6 +261,37 @@ export default function Community() {
                 }
 
                 @media (max-width: 480px) {
+                    .community-section {
+                        padding: 2rem 0;
+                    }
+                    .community-intro {
+                        margin-bottom: 2rem;
+                    }
+                    .community-description {
+                        font-size: 0.9375rem;
+                        padding: 0 0.5rem;
+                    }
+                    .join-button {
+                        font-size: 0.9375rem;
+                        padding: 0.875rem 1.25rem;
+                        min-height: 48px;
+                    }
+                    .marquee-3d-container {
+                        padding: 2rem 0;
+                        perspective: none;
+                        overflow-x: hidden;
+                    }
+                    .marquee-3d-container::before,
+                    .marquee-3d-container::after {
+                        width: 50px;
+                    }
+                    .marquee-3d {
+                        transform: none;
+                        gap: 1rem;
+                    }
+                    .marquee-row {
+                        gap: 1rem;
+                    }
                     .marquee-item {
                         width: 180px;
                         height: 130px;

@@ -138,6 +138,25 @@ export default function ExploreMore() {
                 :global(.scroll-list__wrp::-webkit-scrollbar) {
                     display: none;
                 }
+
+                @media (max-width: 480px) {
+                    :global(.explore-card) {
+                        padding: 1.25rem 1rem;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 1rem;
+                    }
+                    :global(.explore-title) {
+                        font-size: 1.125rem;
+                    }
+                    :global(.explore-description) {
+                        font-size: 0.875rem;
+                    }
+                    :global(.explore-arrow) {
+                        align-self: flex-end;
+                        display: none;
+                    }
+                }
             `}</style>
         </section>
     );

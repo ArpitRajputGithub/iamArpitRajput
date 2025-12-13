@@ -668,6 +668,52 @@ export default function Skills() {
                         gap: 0.5rem;
                     }
                 }
+
+                @media (max-width: 480px) {
+                    .section-header {
+                        margin-bottom: 1.5rem;
+                        justify-content: center;
+                        width: 100%;
+                    }
+                    .section-title {
+                        text-align: center;
+                        width: 100%;
+                    }
+                    .section-title h2 {
+                        text-align: center;
+                    }
+                    .skills-container {
+                        justify-content: center;
+                    }
+                    .contextual-message {
+                        font-size: 0.875rem;
+                        padding: 0.875rem 1.25rem;
+                        margin-bottom: 1.5rem;
+                    }
+                    .stack-box-content {
+                        height: 220px;
+                        padding: 1rem;
+                    }
+                    .stack-item-card {
+                        width: 90px;
+                        height: 90px;
+                    }
+                    .stack-icon-wrapper svg {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                    }
+                    .stack-title {
+                        font-size: 0.95rem;
+                    }
+                    :global(.skill-pill) {
+                        padding: 0.5rem 0.875rem;
+                        font-size: 0.8125rem;
+                    }
+                    .clear-button-bottom {
+                        padding: 0.5rem 1.25rem;
+                        font-size: 0.8125rem;
+                    }
+                }
             `}</style>
         </section >
     );
