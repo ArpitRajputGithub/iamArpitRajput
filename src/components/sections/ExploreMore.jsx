@@ -11,10 +11,10 @@ const exploreItems = [
         href: '/philosophy',
     },
     {
-        title: 'Downloads',
-        description: 'Resume, starter templates, API boilerplates, and resources',
-        badge: 'Resources',
-        href: '/downloads',
+        title: 'Research I\'m Exploring',
+        description: 'Papers I\'ve read with summaries and my insights',
+        badge: 'Learning',
+        href: '/research',
     },
     {
         title: 'For Recruiters',
@@ -29,10 +29,16 @@ const exploreItems = [
         href: '/fun',
     },
     {
-        title: 'Research Papers',
-        description: 'Papers I\'ve read with summaries and my insights',
-        badge: 'Learning',
-        href: '/research',
+        title: 'Resources & Downloads',
+        description: 'Resume, starter templates, API boilerplates, and resources',
+        badge: 'Resources',
+        href: '/downloads',
+    },
+    {
+        title: 'Activity Feed',
+        description: 'What I\'ve been up to lately - projects, learnings, and thoughts',
+        badge: 'Updates',
+        href: '/activity',
     },
 ];
 
@@ -46,7 +52,7 @@ export default function ExploreMore() {
     return (
         <section className="section explore-section" id="explore">
             <div className="section-title" style={{ marginBottom: '2rem' }}>
-                <h2>Explore More</h2>
+                <h2>Engineering, Curiosity & Me</h2>
             </div>
 
             <ScrollList

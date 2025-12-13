@@ -1,32 +1,28 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { ScrollReveal } from '@/components/lightswind/scroll-reveal';
 
 const projects = [
     {
-        title: 'Project One',
+        title: 'Full-Stack Web App',
         description: 'A full-stack web application built with React and Node.js. Features include user authentication, real-time updates, and a modern UI.',
         tech: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
         github: 'https://github.com',
         demo: 'https://demo.com',
-        image: null,
     },
     {
-        title: 'Project Two',
+        title: 'AI-Powered Automation',
         description: 'An AI-powered application that helps users automate their daily tasks. Built using Python and modern ML frameworks.',
         tech: ['Python', 'FastAPI', 'OpenAI', 'Redis'],
         github: 'https://github.com',
         demo: 'https://demo.com',
-        image: null,
     },
     {
-        title: 'Project Three',
+        title: 'E-commerce Platform',
         description: 'A mobile-first e-commerce platform with seamless checkout experience and inventory management.',
         tech: ['Next.js', 'Stripe', 'PostgreSQL', 'Tailwind'],
         github: 'https://github.com',
         demo: 'https://demo.com',
-        image: null,
     },
 ];
 
@@ -68,7 +64,7 @@ export default function Projects() {
     return (
         <section className="section" ref={projectsRef} id="projects">
             <div className="section-title animate-on-scroll" style={{ opacity: 0 }}>
-                <h2>Featured Projects</h2>
+                <h2>Proof of Work</h2>
             </div>
 
             <div className="projects-grid">
@@ -100,45 +96,45 @@ export default function Projects() {
             </div>
 
             <style jsx>{`
-        .project-card {
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-        }
-        .project-header {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
-        }
-        .project-title {
-          margin-bottom: 0;
-          font-size: 1.25rem;
-        }
-        .project-links {
-          display: flex;
-          gap: 0.75rem;
-        }
-        .project-links a {
-          color: var(--foreground-secondary);
-          transition: color 0.2s ease, transform 0.2s ease;
-        }
-        .project-links a:hover {
-          color: var(--accent);
-          transform: translateY(-2px);
-        }
-        .project-description {
-          color: var(--foreground-secondary);
-          font-size: 0.95rem;
-          line-height: 1.7;
-          margin: 0;
-        }
-        .project-tech {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 0.5rem;
-          margin-top: auto;
-        }
-      `}</style>
+                .project-card {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+                .project-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+                .project-title {
+                    margin-bottom: 0;
+                    font-size: 1.25rem;
+                }
+                .project-links {
+                    display: flex;
+                    gap: 0.75rem;
+                }
+                .project-links a {
+                    color: var(--foreground-secondary);
+                    transition: color 0.2s ease, transform 0.2s ease;
+                }
+                .project-links a:hover {
+                    color: var(--accent);
+                    transform: translateY(-2px);
+                }
+                .project-description {
+                    color: var(--foreground-secondary);
+                    font-size: 0.95rem;
+                    line-height: 1.7;
+                    margin: 0;
+                }
+                .project-tech {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.5rem;
+                    margin-top: auto;
+                }
+            `}</style>
         </section>
     );
 }
