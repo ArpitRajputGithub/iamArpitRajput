@@ -5,6 +5,11 @@ export const metadata = {
     description: 'Software engineer passionate about building amazing digital experiences.',
     keywords: ['developer', 'portfolio', 'full stack', 'react', 'nextjs'],
     authors: [{ name: 'Arpit' }],
+    icons: {
+        icon: '/favicon.png',
+        shortcut: '/favicon.png',
+        apple: '/favicon.png',
+    },
     openGraph: {
         title: 'Hi, I am Arpit',
         description: 'Software engineer passionate about building amazing digital experiences.',

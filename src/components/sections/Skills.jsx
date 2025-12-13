@@ -260,9 +260,6 @@ export default function Skills() {
                 <div className="section-title animate-on-scroll" style={{ opacity: 0 }}>
                     <h2>Skills</h2>
                 </div>
-                <span className="build-hint animate-on-scroll" style={{ opacity: 0, animationDelay: '0.2s' }}>
-                    Build a stack you'd hire me for ↗
-                </span>
             </div>
 
             {/* Contextual Message */}

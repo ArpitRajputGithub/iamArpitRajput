@@ -16,15 +16,16 @@ export default function Home() {
             <NavigationDock />
             <main className="container">
                 <Hero />
+                <Separator className="my-4 opacity-50" lineStyle="dashed" />
                 <Projects />
-                <Separator className="my-4 opacity-50" />
+                <Separator className="my-4 opacity-50" lineStyle="dashed" />
                 <Skills />
-                <Separator className="my-4 opacity-50" />
+                <Separator className="my-4 opacity-50" lineStyle="dashed" />
                 <Experience />
-                <Separator className="my-4 opacity-50" />
+                <Separator className="my-4 opacity-50" lineStyle="dashed" />
                 <Community />
                 <ExploreMore />
-                <Separator className="my-4 opacity-50" />
+                <Separator className="my-4 opacity-50" lineStyle="dashed" />
                 <Contact />
             </main>
         </>
