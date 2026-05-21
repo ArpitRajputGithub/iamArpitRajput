@@ -22,7 +22,7 @@ const papers = [
         category: 'System Design',
         summary: 'Comprehensive guide to building reliable, scalable, and maintainable data systems.',
         insight: 'My go-to resource for understanding trade-offs in distributed systems. Every engineer should read this.',
-        link: '#',
+        link: 'https://dataintensive.net/',
     },
     {
         title: 'The Twelve-Factor App',
@@ -49,7 +49,7 @@ const papers = [
         category: 'Distributed Systems',
         summary: 'States that a distributed system can only guarantee two of three: Consistency, Availability, Partition tolerance.',
         insight: 'Essential mental model for making architecture decisions in distributed systems.',
-        link: '#',
+        link: 'https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed/',
     },
 ];
 
@@ -123,11 +123,9 @@ export default function ResearchPage() {
                                 <div className="paper-insight">
                                     <strong>My Take:</strong> {paper.insight}
                                 </div>
-                                {paper.link !== '#' && (
-                                    <a href={paper.link} target="_blank" rel="noopener noreferrer" className="paper-link">
-                                        Read Paper <ArrowIcon />
-                                    </a>
-                                )}
+                                <a href={paper.link} target="_blank" rel="noopener noreferrer" className="paper-link">
+                                    Read Paper <ArrowIcon />
+                                </a>
                             </article>
                         ))}
                     </div>

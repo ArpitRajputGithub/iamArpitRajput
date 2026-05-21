@@ -4,25 +4,22 @@ import { useEffect, useRef } from 'react';
 
 const projects = [
     {
-        title: 'Full-Stack Web App',
-        description: 'A full-stack web application built with React and Node.js. Features include user authentication, real-time updates, and a modern UI.',
-        tech: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
-        github: 'https://github.com',
-        demo: 'https://demo.com',
+        title: 'Plunge - Social Networking Platform',
+        description: 'Built a responsive social networking platform serving 5,000+ active users with real-time messaging, accessible dynamic UI components, advanced search, and user recommendation flows.',
+        tech: ['React Native', 'Node.js', 'MongoDB', 'Real-time Messaging'],
+        demo: 'https://plunge.one',
     },
     {
-        title: 'AI-Powered Automation',
-        description: 'An AI-powered application that helps users automate their daily tasks. Built using Python and modern ML frameworks.',
-        tech: ['Python', 'FastAPI', 'OpenAI', 'Redis'],
-        github: 'https://github.com',
-        demo: 'https://demo.com',
+        title: 'CraviiFy - Food Delivery Platform',
+        description: 'Developed a secure multi-vendor food ordering app with real-time order tracking, Auth0 authentication for 1,000+ users, resilient REST APIs, and optimized database queries that reduced response times by 45%.',
+        tech: ['MERN', 'Auth0', 'REST APIs', 'Caching'],
+        demo: 'https://mern-food-ordering-app-frontend-8971.onrender.com',
     },
     {
-        title: 'E-commerce Platform',
-        description: 'A mobile-first e-commerce platform with seamless checkout experience and inventory management.',
-        tech: ['Next.js', 'Stripe', 'PostgreSQL', 'Tailwind'],
-        github: 'https://github.com',
-        demo: 'https://demo.com',
+        title: 'CodeZen - Hackathon Event Platform',
+        description: 'Created a high-performance hackathon website handling 1,000+ concurrent users with zero downtime, 95+ Lighthouse scores, optimized server rendering, payment integration, and 500+ participant registrations.',
+        tech: ['Next.js', 'Vercel', 'SSR', 'Payments'],
+        demo: 'https://codezen-eight.vercel.app/',
     },
 ];
 
@@ -77,12 +74,16 @@ export default function Projects() {
                         <div className="project-header">
                             <h3 className="project-title">{project.title}</h3>
                             <div className="project-links">
-                                <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                                    <GitHubIcon />
-                                </a>
-                                <a href={project.demo} target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
-                                    <ExternalLinkIcon />
-                                </a>
+                                {project.github && (
+                                    <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} GitHub`}>
+                                        <GitHubIcon />
+                                    </a>
+                                )}
+                                {project.demo && (
+                                    <a href={project.demo} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} Live Demo`}>
+                                        <ExternalLinkIcon />
+                                    </a>
+                                )}
                             </div>
                         </div>
                         <p className="project-description">{project.description}</p>

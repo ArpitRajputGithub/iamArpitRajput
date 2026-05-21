@@ -129,30 +129,39 @@ const DefaultIcon = ({ name }) => (
 );
 
 const skills = [
-    { name: 'React', category: 'frontend', Icon: ReactIcon },
-    { name: 'Next.js', category: 'framework', Icon: NextJSIcon },
-    { name: 'TypeScript', category: 'language', Icon: TypeScriptIcon },
-    { name: 'Node.js', category: 'backend', Icon: NodeJSIcon },
-    { name: 'MongoDB', category: 'database', Icon: MongoDBIcon },
     { name: 'JavaScript', category: 'language', Icon: JavaScriptIcon },
-    { name: 'GSAP', category: 'animation' },
-    { name: 'Supabase', category: 'backend', Icon: SupabaseIcon },
-    { name: 'Clerk', category: 'auth', Icon: ClerkIcon },
+    { name: 'TypeScript', category: 'language', Icon: TypeScriptIcon },
+    { name: 'Python', category: 'language' },
+    { name: 'C++', category: 'language' },
+    { name: 'React', category: 'frontend', Icon: ReactIcon },
+    { name: 'Next.js', category: 'frontend', Icon: NextJSIcon },
     { name: 'React Native', category: 'mobile', Icon: ReactNativeIcon },
-    { name: 'Expo', category: 'mobile', Icon: ExpoIcon },
-    { name: 'Bullmq', category: 'queue' },
-    { name: 'Drizzle ORM', category: 'database' },
-    { name: 'Zustand', category: 'state', Icon: ZustandIcon },
-    { name: 'Docker', category: 'devops', Icon: DockerIcon },
-    { name: 'GraphQL', category: 'api', Icon: GraphQLIcon },
     { name: 'Tailwind CSS', category: 'styling', Icon: TailwindIcon },
+    { name: 'Node.js', category: 'backend', Icon: NodeJSIcon },
+    { name: 'Express.js', category: 'backend', Icon: ExpressIcon },
+    { name: 'NestJS', category: 'backend' },
+    { name: 'FastAPI', category: 'backend' },
+    { name: 'REST APIs', category: 'api' },
+    { name: 'GraphQL', category: 'api', Icon: GraphQLIcon },
+    { name: 'MongoDB', category: 'database', Icon: MongoDBIcon },
+    { name: 'PostgreSQL', category: 'database', Icon: PostgreSQLIcon },
+    { name: 'MySQL', category: 'database' },
     { name: 'Redis', category: 'database', Icon: RedisIcon },
     { name: 'AWS', category: 'cloud', Icon: AWSIcon },
-    { name: 'Express.js', category: 'backend', Icon: ExpressIcon },
+    { name: 'Docker', category: 'devops', Icon: DockerIcon },
+    { name: 'Kubernetes', category: 'devops' },
+    { name: 'Helm', category: 'devops' },
+    { name: 'GitHub Actions', category: 'devops' },
+    { name: 'Jest', category: 'testing' },
+    { name: 'Vitest', category: 'testing' },
+    { name: 'Testing Library', category: 'testing' },
+    { name: 'Better Auth', category: 'auth' },
+    { name: 'Auth0', category: 'auth' },
+    { name: 'Firebase Cloud Messaging', category: 'notifications' },
+    { name: 'ChatGPT API', category: 'ai' },
+    { name: 'Hugging Face', category: 'ai' },
+    { name: 'Prompt Engineering', category: 'ai' },
     { name: 'Figma', category: 'design', Icon: FigmaIcon },
-    { name: 'PostgreSQL', category: 'database', Icon: PostgreSQLIcon },
-    { name: 'Socket.io', category: 'realtime', Icon: SocketIOIcon },
-    { name: 'Shadcn UI', category: 'ui' },
 ];
 
 const getContextualMessage = (selectedSkills) => {
@@ -170,6 +179,14 @@ const getContextualMessage = (selectedSkills) => {
         return "I've built production systems with this stack";
     }
 
+    if (skillNames.includes('NestJS') && skillNames.includes('PostgreSQL') && skillNames.includes('Kubernetes')) {
+        return "That's right in my current fintech backend lane";
+    }
+
+    if (skillNames.includes('FastAPI') && skillNames.includes('AWS') && skillNames.includes('Firebase Cloud Messaging')) {
+        return "This maps well to healthcare and notification-heavy systems";
+    }
+
     // Frontend heavy
     if (skillNames.includes('React') && skillNames.includes('TypeScript') && skillNames.includes('Tailwind CSS')) {
         return "Modern frontend development at its finest";
@@ -181,6 +198,10 @@ const getContextualMessage = (selectedSkills) => {
     }
 
     // DevOps/Infrastructure
+    if (skillNames.includes('Docker') && skillNames.includes('Kubernetes')) {
+        return "Containerized deployment workflows are my thing";
+    }
+
     if (skillNames.includes('Docker') && skillNames.includes('AWS')) {
         return "Cloud-native deployment expertise";
     }
@@ -191,8 +212,8 @@ const getContextualMessage = (selectedSkills) => {
     }
 
     // Real-time
-    if (skillNames.includes('Socket.io') && skillNames.includes('Redis')) {
-        return "Real-time features are my specialty";
+    if (skillNames.includes('React Native') && skillNames.includes('Node.js') && skillNames.includes('MongoDB')) {
+        return "A strong stack for social and mobile products";
     }
 
     // Generic messages based on count
@@ -447,7 +468,9 @@ export default function Skills() {
                     border: 2px dashed var(--border);
                     border-radius: 16px;
                     padding: 1.5rem;
-                    height: 280px;
+                    min-height: 280px;
+                    max-height: 420px;
+                    overflow-y: auto;
                     display: flex;
                     align-items: flex-end;
                 }
@@ -469,6 +492,7 @@ export default function Skills() {
                 .stack-items-visual {
                     display: flex;
                     flex-wrap: wrap;
+                    align-content: flex-end;
                     gap: 0.75rem;
                     width: 100%;
                 }
@@ -521,6 +545,11 @@ export default function Skills() {
                 }
                 .stack-item-card:hover .remove-icon {
                     opacity: 1;
+                }
+                .remove-icon:focus-visible {
+                    opacity: 1;
+                    outline: 2px solid var(--accent);
+                    outline-offset: 2px;
                 }
                 .remove-icon:hover {
                     background: var(--accent);
@@ -691,7 +720,8 @@ export default function Skills() {
                         margin-bottom: 1.5rem;
                     }
                     .stack-box-content {
-                        height: 220px;
+                        min-height: 220px;
+                        max-height: 360px;
                         padding: 1rem;
                     }
                     .stack-item-card {

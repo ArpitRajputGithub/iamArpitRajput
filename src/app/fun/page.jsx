@@ -12,9 +12,9 @@ const content = {
         description: 'What I listen to while coding',
         items: [
             { title: 'Lo-Fi Beats', subtitle: 'For deep focus sessions' },
-            { title: 'Hans Zimmer', subtitle: 'Epic soundtracks for problem-solving' },
-            { title: 'Indie Rock', subtitle: 'When debugging gets intense' },
-            { title: 'Classical Piano', subtitle: 'For late night commits' },
+            { title: 'Instrumental Mixes', subtitle: 'For system design and architecture work' },
+            { title: 'Hindi Indie', subtitle: 'For lighter build sessions' },
+            { title: 'Focus Playlists', subtitle: 'For late night debugging' },
         ],
     },
     Books: {
@@ -22,35 +22,35 @@ const content = {
         items: [
             { title: 'Clean Code', subtitle: 'Robert C. Martin' },
             { title: 'System Design Interview', subtitle: 'Alex Xu' },
+            { title: 'Designing Data-Intensive Applications', subtitle: 'Martin Kleppmann' },
             { title: 'Atomic Habits', subtitle: 'James Clear' },
-            { title: 'The Psychology of Money', subtitle: 'Morgan Housel' },
         ],
     },
     Hobbies: {
         description: 'When I\'m not coding',
         items: [
-            { title: 'Gaming', subtitle: 'Strategy and RPGs' },
-            { title: 'Photography', subtitle: 'Urban and street' },
-            { title: 'Traveling', subtitle: 'Exploring new places' },
-            { title: 'Cooking', subtitle: 'Experimenting with recipes' },
+            { title: 'Community Building', subtitle: 'Helping developers learn together' },
+            { title: 'Technical Writing', subtitle: 'Turning lessons into notes' },
+            { title: 'Open Source', subtitle: 'Exploring tools and ideas in public' },
+            { title: 'AI/ML Research', subtitle: 'Reading and experimenting with LLMs' },
         ],
     },
     Tools: {
         description: 'My daily drivers',
         items: [
             { title: 'VS Code', subtitle: 'Primary editor' },
-            { title: 'Notion', subtitle: 'Notes and planning' },
-            { title: 'Figma', subtitle: 'Design and prototyping' },
-            { title: 'Linear', subtitle: 'Project management' },
+            { title: 'Postman', subtitle: 'API testing and debugging' },
+            { title: 'Docker', subtitle: 'Local services and deployment parity' },
+            { title: 'GitHub Actions', subtitle: 'Build, test, and deployment automation' },
         ],
     },
     'Fun Facts': {
         description: 'Random things about me',
         items: [
-            { title: 'Night Owl', subtitle: 'Best code after midnight' },
-            { title: 'Coffee Addict', subtitle: '4+ cups a day' },
-            { title: 'Keyboard Enthusiast', subtitle: 'Mechanical only' },
-            { title: 'Dark Mode Forever', subtitle: 'Light mode hurts' },
+            { title: 'Delhi Based', subtitle: 'Building from India' },
+            { title: 'Community First', subtitle: 'Co-founder of Codegeeks' },
+            { title: 'Product Mindset', subtitle: 'I like owning the full flow' },
+            { title: 'Systems Curious', subtitle: 'Always learning how reliable products scale' },
         ],
     },
 };

@@ -26,10 +26,10 @@ export default function Community() {
     // Codegeeks community photos
     const communityImages = [
         '/codegeeks/1.jpg',
-        '/codegeeks/2.jpg',
+        '/codegeeks/2-fixed.jpg',
         '/codegeeks/3.jpg',
         '/codegeeks/4.jpg',
-        '/codegeeks/IMG_2581.HEIC',
+        '/codegeeks/5.jpg',
     ];
 
     // Shuffle array to randomize order

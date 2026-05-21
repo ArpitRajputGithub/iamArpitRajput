@@ -1,24 +1,36 @@
 import './globals.css';
 
 export const metadata = {
-    title: 'Hi, I am Arpit',
-    description: 'Software engineer passionate about building amazing digital experiences.',
-    keywords: ['developer', 'portfolio', 'full stack', 'react', 'nextjs'],
-    authors: [{ name: 'Arpit' }],
+    metadataBase: new URL('https://iamarpitrajput.dev'),
+    title: 'Arpit Rajput - Software Engineer @1Fi',
+    description: 'Full stack software engineer building scalable web, fintech, healthcare, and community products with Next.js, Node.js, NestJS, FastAPI, PostgreSQL, and AWS.',
+    keywords: ['Arpit Rajput', 'software engineer', 'full stack developer', 'Next.js', 'React', 'Node.js', 'NestJS', 'FastAPI', 'portfolio'],
+    authors: [{ name: 'Arpit Rajput' }],
     icons: {
         icon: '/favicon.png',
         shortcut: '/favicon.png',
         apple: '/favicon.png',
     },
     openGraph: {
-        title: 'Hi, I am Arpit',
-        description: 'Software engineer passionate about building amazing digital experiences.',
+        title: 'Arpit Rajput - Software Engineer @1Fi',
+        description: 'Portfolio, projects, experience, and proof of work from Arpit Rajput.',
+        url: '/',
+        siteName: 'Arpit Rajput',
+        images: [
+            {
+                url: '/me.jpg',
+                width: 1200,
+                height: 1200,
+                alt: 'Arpit Rajput',
+            },
+        ],
         type: 'website',
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Hi, I am Arpit',
-        description: 'Software engineer passionate about building amazing digital experiences.',
+        title: 'Arpit Rajput - Software Engineer @1Fi',
+        description: 'Full stack software engineer building scalable products across fintech, healthcare, and communities.',
+        images: ['/me.jpg'],
     },
 };
 

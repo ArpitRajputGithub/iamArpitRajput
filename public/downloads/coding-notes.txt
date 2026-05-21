@@ -1,0 +1,32 @@
+Arpit Rajput - Coding Notes
+
+Core Engineering Habits
+
+- Start by making the data model clear.
+- Keep API contracts boring, documented, and predictable.
+- Validate requests at the boundary.
+- Prefer readable code over clever code.
+- Add tests around business rules, auth checks, and data transformations.
+
+Backend Checklist
+
+- Use structured request validation.
+- Centralize error handling.
+- Keep auth and authorization separate.
+- Add health checks for deployment.
+- Log operational events without leaking sensitive data.
+
+Frontend Checklist
+
+- Keep components focused on one responsibility.
+- Prefer accessible semantic HTML.
+- Optimize images and avoid layout shift.
+- Test critical flows across mobile and desktop.
+
+Deployment Checklist
+
+- Use environment variables for secrets.
+- Run build, test, and lint checks in CI.
+- Keep Docker images small.
+- Document rollback steps.
+

@@ -1,9 +1,23 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { ScrollReveal } from '@/components/lightswind/scroll-reveal';
 
 const experiences = [
+    {
+        title: 'Software Engineer Intern',
+        company: '1Fi',
+        location: 'Gurugram, India',
+        duration: 'Jan 2026 - Present',
+        description: 'Built backend services and internal tools for NBFC-backed loan management workflows.',
+        highlights: [
+            'Built backend services for a Loan Management System using NestJS, supporting loan creation, customer management, and loan-security assignment workflows',
+            'Developed REST APIs for loan, customer, merchant, and admin modules with PostgreSQL data persistence and structured request validation',
+            'Created a Next.js admin portal for internal teams to manage loans, merchants, customers, and operational workflows through a centralized dashboard',
+            'Implemented secure authentication and authorization using Better Auth across protected APIs and admin-facing frontend routes',
+            'Containerized services with Docker and deployed applications on Kubernetes using Deployments, Services, Ingress, ConfigMaps, and Secrets',
+            'Automated build, test, and deployment workflows using GitHub Actions CI/CD, with tests written in Jest, Vitest, and Testing Library',
+        ],
+    },
     {
         title: 'Full Stack Developer',
         company: 'LabBuddy',
@@ -26,10 +40,10 @@ const experiences = [
         duration: 'Dec 2024 - Apr 2025',
         description: 'Architected and developed social networking features using React Native and Node.js, enhancing user experience and system scalability.',
         highlights: [
+            'Architected and developed social networking features using React Native and Node.js, enhancing user experience and system scalability',
             'Optimized API response times, reducing backend latency by 40% and improving engagement by 25%',
             'Implemented MongoDB schemas for efficient data retrieval, improving database query performance and application responsiveness',
             'Delivered 15+ features in agile sprints, collaborating with PMs and designers',
-            'Established CI/CD pipelines (GitHub Actions), cutting deployment time by 50%',
             'Conducted code reviews and mentored juniors, raising team coding standards',
         ],
     },

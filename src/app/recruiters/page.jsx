@@ -7,9 +7,9 @@ import { ShinyText } from '@/components/lightswind/shiny-text';
 import { InteractiveGradient } from '@/components/lightswind/interactive-gradient-card';
 
 const skills = [
-    'JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js',
-    'Python', 'PostgreSQL', 'MongoDB', 'Redis', 'Docker',
-    'AWS', 'Git', 'REST APIs', 'GraphQL', 'System Design'
+    'JavaScript', 'TypeScript', 'Python', 'React', 'Next.js',
+    'Node.js', 'NestJS', 'FastAPI', 'PostgreSQL', 'MongoDB',
+    'AWS', 'Docker', 'Kubernetes', 'GitHub Actions', 'Better Auth'
 ];
 
 const highlights = [

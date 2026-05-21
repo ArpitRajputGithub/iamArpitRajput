@@ -80,7 +80,7 @@ export default function Hero() {
           className="hero-title animate-on-scroll"
           style={{ opacity: 0, animationDelay: '0.3s' }}
         >
-          Software engineer
+          Software engineer @1fi
         </p>
         <ScrollReveal
           size="sm"

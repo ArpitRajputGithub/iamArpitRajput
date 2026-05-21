@@ -8,7 +8,7 @@ import { ShinyText } from '@/components/lightswind/shiny-text';
 
 const downloadItems = [
     {
-        title: 'Resume Template',
+        title: 'Resume',
         description: 'My latest resume with work experience and skills',
         icon: (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -24,7 +24,7 @@ const downloadItems = [
     },
     {
         title: 'Starter Templates',
-        description: 'Next.js, React, and Node.js project starters',
+        description: 'A compact checklist for Next.js, React, and Node.js project starters',
         icon: (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
@@ -35,7 +35,7 @@ const downloadItems = [
     },
     {
         title: 'API Boilerplates',
-        description: 'REST and GraphQL API templates with authentication',
+        description: 'Backend patterns for REST APIs, auth, validation, and database design',
         icon: (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <polyline points="16 18 22 12 16 6" />
@@ -47,7 +47,7 @@ const downloadItems = [
     },
     {
         title: 'Coding Notes',
-        description: 'Personal notes on algorithms, system design, and best practices',
+        description: 'Personal engineering notes for backend, frontend, and deployment checklists',
         icon: (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
@@ -59,7 +59,7 @@ const downloadItems = [
     },
     {
         title: 'Design Kit',
-        description: 'UI components, color palettes, and design system',
+        description: 'Portfolio design tokens, typography, color palette, and component conventions',
         icon: (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <circle cx="12" cy="12" r="10" />
