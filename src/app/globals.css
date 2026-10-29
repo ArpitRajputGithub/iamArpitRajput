@@ -113,20 +113,6 @@ body {
 
 /* ---------- Effects ---------- */
 
-/* Community photo marquee */
-@keyframes marquee {
-  to {
-    transform: translateX(-50%);
-  }
-}
-.marquee-track {
-  animation: marquee var(--marquee-duration, 40s) linear infinite;
-  animation-direction: var(--marquee-direction, normal);
-}
-.marquee:hover .marquee-track {
-  animation-play-state: paused;
-}
-
 /* Theme switch circle (see components/ThemeToggle.jsx) */
 ::view-transition-old(root),
 ::view-transition-new(root) {
@@ -138,9 +124,6 @@ body {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
-  }
-  .marquee-track {
-    animation: none;
   }
   *,
   *::before,
